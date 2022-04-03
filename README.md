@@ -1,2 +1,2 @@
-# portfolio
-built with React and typescript
+# Portfolio Project
+Built with React, Typescript and Material UI

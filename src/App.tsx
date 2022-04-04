@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Grid from '@mui/material/Grid'
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid container>
+        <Grid item>
+            Rhett Kaufusi
+        </Grid>
+        <Grid item>
+          <img src="https://avatars.githubusercontent.com/u/29996077?s=400&u=7ff0609f49dde0b01183b37e8d6384a9ef17f540&v=4" alt="Picture of Rhett"/>
+        </Grid>
+      </Grid>
     </div>
   );
 }

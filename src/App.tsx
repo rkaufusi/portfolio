@@ -3,14 +3,34 @@ import Grid from '@mui/material/Grid'
 import './App.css';
 //import {makeStyles} from '@mui/styles'
 import Avatar from '@mui/material/Avatar';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography'
 
 function App() {
 
   return (
     <div className="App">
-      <Grid container>
+      <Paper sx={{background: "#dddddd"}}>
+      <Grid container display="flex">
+        
         <Grid item xs={12} md={6}>
-            Rhett Kaufusi
+          <Grid container>
+            <Grid item xs={12}>
+              <Typography variant="h1">
+                Rhett Kaufusi
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h4">
+                Software Engineer
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6">
+                <a href="https://github.com/rkaufusi/" target="_blank">GitHub</a>
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item xs={12} md={6}>
           <Avatar 
@@ -20,6 +40,7 @@ function App() {
           />
         </Grid>
       </Grid>
+      </Paper>
     </div>
   );
 }

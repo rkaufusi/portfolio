@@ -9,15 +9,30 @@ import Typography from '@mui/material/Typography'
 function App() {
 
   return (
-    <div className="App">
-      <Paper sx={{background: "#dddddd"}}>
-      <Grid container display="flex">
+    <div >
+      <Paper sx={{background: "#dddddd", paddingTop: 10, paddingBottom: 10}}>
+        <Grid 
+          container
+          direction="row"   
+          justifyContent="center"
+          alignItems="center"
+        >
         
         <Grid item xs={12} md={6}>
-          <Grid container>
+          <Grid 
+            container 
+            direction="column"   
+            justifyContent="space-between"
+            alignItems="center"
+          >
             <Grid item xs={12}>
               <Typography variant="h1">
-                Rhett Kaufusi
+                Rhett
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h1">
+                Kaufusi
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -32,12 +47,18 @@ function App() {
             </Grid>
           </Grid>
         </Grid>
+        
         <Grid item xs={12} md={6}>
+        <Grid 
+          container
+          direction="column"   
+          alignItems="center">
           <Avatar 
             src="https://avatars.githubusercontent.com/u/29996077?s=400&u=7ff0609f49dde0b01183b37e8d6384a9ef17f540&v=4" 
             alt="Picture of Rhett" 
             sx={{ width: 480, height: 480 }}
           />
+          </Grid>
         </Grid>
       </Grid>
       </Paper>

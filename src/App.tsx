@@ -5,8 +5,10 @@ import './App.css';
 import Avatar from '@mui/material/Avatar';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography'
+import projects from './projects'
 
 function App() {
+  console.log(projects)
 
   return (
     <div >
@@ -62,6 +64,25 @@ function App() {
         </Grid>
       </Grid>
       </Paper>
+      <Paper sx={{background: "#f7e7c5", paddingTop: 10, paddingBottom: 10}}>
+        <Grid 
+          container
+          direction="row"   
+          justifyContent="center"
+          alignItems="center"
+        >
+          {projects.map((value, index) => { 
+            return(
+              <Grid item xs={12} md={6} lg={4}>
+              <Typography variant="h6">{value.title}</Typography>
+              </Grid>
+            )
+
+          })}
+          
+        </Grid>
+      </Paper>
+
     </div>
   );
 }

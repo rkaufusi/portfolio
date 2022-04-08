@@ -15,6 +15,11 @@ const projects: Projects[] = [
         title: "Crypto Human Networks",
         image: "tbd",
         url: "https://tourmaline-entremet-124d58.netlify.app/"
+    },
+    {   id: 3,
+        title: "TBD",
+        image: "tbd",
+        url: "https://tourmaline-entremet-124d58.netlify.app/"
     }
 ];
 

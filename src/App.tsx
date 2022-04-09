@@ -1,7 +1,5 @@
 import React from 'react';
 import Grid from '@mui/material/Grid'
-import './App.css';
-//import {makeStyles} from '@mui/styles'
 import Avatar from '@mui/material/Avatar';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography'
@@ -77,7 +75,7 @@ function App() {
           {projects.map((value, index) => { 
             return(
               <Grid item xs={12} md={6} lg={4} sx={{padding: 5, justifyContent: "center"}}>
-                <Project title={value.title}/>
+                <Project title={value.title} projectImage={value.image}/>
               </Grid>
             )
           })}       

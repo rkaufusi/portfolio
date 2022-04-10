@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState} from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -7,19 +8,19 @@ import { CardActionArea } from '@mui/material';
 
 type proj = {
   title: string,
-  projectImage: any
+  projectImage: string,
+  url: string
 }
 
-const Project = ({title, projectImage}: proj) => {
+const Project = ({title, projectImage, url}: proj) => {
 
   return (
-    <Card sx={{ maxWidth: 345, minWidth: 345}}>
-      <CardActionArea>
+    <Card sx={{ maxWidth: 345, minWidth: 345, "&:hover": { transform: "scale3d(1.10, 1.10, 1)"}}}>
+      <CardActionArea href={url} target="_blank">
         <CardMedia
           component="img"
           height="150"
           image={projectImage}
-          //image="https://avatars.githubusercontent.com/u/29996077?s=400&u=7ff0609f49dde0b01183b37e8d6384a9ef17f540&v=4"
           alt={title}
         />
         <CardContent>

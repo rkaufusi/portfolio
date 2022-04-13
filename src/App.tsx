@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography'
 import projects from './projects'
 import Project from './project'
+import Resume from './resume'
 
 function App() {
   console.log(projects)
@@ -81,6 +82,7 @@ function App() {
           })}       
         </Grid>
       </Paper>
+      <Resume/>
     </>
   );
 }

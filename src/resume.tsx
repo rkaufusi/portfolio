@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import {useState} from 'react'
-import cryptoHumanNetworks from './ProjectItems'
+import cryptoHumanNetworks, {kanBan, sortingVisualizer, certifications, skills} from './ProjectItems'
 
 
 
@@ -53,12 +53,64 @@ const Resume = () => {
                                 <List dense={dense}>
                                     {cryptoHumanNetworks.map((value)=>{
                                         return (
-                                            <ListItem>
+                                          <ListItem>
                                             <ListItemText primary={value.text}/>
-                                        </ListItem>
+                                          </ListItem>
                                         )
                                     })}
                                 </List>
+                                <Typography variant="h6" >
+                                    Project Management KanBan
+                                </Typography>
+                                <Typography variant="h6">
+                                    Full Stack Developer
+                                </Typography>
+                                <List dense={dense}>
+                                    {kanBan.map((value)=>{
+                                        return (
+                                          <ListItem>
+                                            <ListItemText primary={value.text}/>
+                                          </ListItem>
+                                        )
+                                    })}
+                                </List>
+                                <Typography variant="h6" >
+                                    Sorting Algorithm Visualizer
+                                </Typography>
+                                <Typography variant="h6">
+                                    Front End Developer
+                                </Typography>
+                                <List dense={dense}>
+                                    {sortingVisualizer.map((value)=>{
+                                        return (
+                                          <ListItem>
+                                            <ListItemText primary={value.text}/>
+                                          </ListItem>
+                                        )
+                                    })}
+                                </List>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Typography variant="h4" >
+                                    Work History
+                                </Typography>
+                                <Typography variant="h6" >
+                                    Omeo Technology
+                                </Typography>
+                                <Typography variant="h6">
+                                    Eugene Oregon
+                                </Typography>
+                                <Typography variant="h6">
+                                    Videographer and editor
+                                </Typography>
+                                <Typography >
+                                    April 2020 - Current
+                                </Typography>
+                                <Typography >
+                                    Responsible for monthly online expo which replaced in person events due to COVID. 
+                                    Filmed and edited content for social media. 
+                                    https://www.facebook.com/OmeoTechnologyLtd/
+                                </Typography>
                             </Grid>
                         </Grid>                     
                     </Grid>
@@ -75,7 +127,34 @@ const Resume = () => {
                                     LinkedIn
                                 </Typography>
                             </Grid>
-
+                            <Grid item>
+                                <Typography variant="h6">
+                                    Certifications
+                                </Typography>
+                                <List dense={dense}>
+                                    {certifications.map((value)=>{
+                                        return (
+                                          <ListItem>
+                                            <ListItemText primary={value.text}/>
+                                          </ListItem>
+                                        )
+                                    })}
+                                </List>
+                            </Grid>
+                            <Grid item>
+                                <Typography variant="h6">
+                                    Skills
+                                </Typography>
+                                <List dense={dense}>
+                                    {skills.map((value)=>{
+                                        return (
+                                          <ListItem>
+                                            <ListItemText primary={value.text}/>
+                                          </ListItem>
+                                        )
+                                    })}
+                                </List>
+                            </Grid>       
                         </Grid>
                     </Grid>
                 </Grid>

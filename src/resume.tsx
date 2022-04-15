@@ -7,6 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import {useState} from 'react'
 import cryptoHumanNetworks, {kanBan, sortingVisualizer, certifications, skills} from './ProjectItems'
+import CircleIcon from '@mui/icons-material/Circle';
 
 
 
@@ -54,6 +55,7 @@ const Resume = () => {
                                     {cryptoHumanNetworks.map((value)=>{
                                         return (
                                           <ListItem>
+                                              <CircleIcon sx={{fontSize: 8}}/>
                                             <ListItemText primary={value.text}/>
                                           </ListItem>
                                         )
@@ -131,10 +133,10 @@ const Resume = () => {
                                 <Typography variant="h6">
                                     Certifications
                                 </Typography>
-                                <List dense={dense}>
+                                <List dense={dense} sx={{ display: 'list-item' }}>
                                     {certifications.map((value)=>{
                                         return (
-                                          <ListItem>
+                                          <ListItem sx={{ display: 'list-item' }}>
                                             <ListItemText primary={value.text}/>
                                           </ListItem>
                                         )

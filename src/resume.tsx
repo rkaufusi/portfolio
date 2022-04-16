@@ -9,49 +9,65 @@ import {useState} from 'react'
 import cryptoHumanNetworks, {kanBan, sortingVisualizer, certifications, skills} from './ProjectItems'
 import CircleIcon from '@mui/icons-material/Circle';
 
+/*
+          container
+          direction="row"   
+          justifyContent="center"
+          alignItems="center"
 
+*/
 
 
 const Resume = () => {
     const [dense, setDense] = useState(true);
+    const items = {
+        paddingLeft: 4
+    }
+    const heading = {
+        paddingTop: 2,
+        paddingBottom: 2
+    }
+    const listItems = {
+        paddingLeft: 1
+    }
+
+    // sx={{paddingLeft: 6}}
     return (
         <div>
-            <Paper sx={{background: "#dddddd", paddingTop: 10, paddingBottom: 10}}>
-                <Grid container justifyContent='center'>
+            <Paper sx={{background: "#f9f9f9", paddingTop: 10, paddingBottom: 10}}>
+                <Grid container direction='row' justifyContent='center'>
                     <Grid item xs={9} >
-                        <Grid container sx={{p: 5}}>
+                        <Grid container alignItems="center" sx={{paddingLeft: 6}}>
                             <Grid item xs={12}>
-                                <Typography variant="h1" >
+                                <Typography variant="h1">
                                     Rhett Kaufusi
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h4" >
+                                <Typography variant="h3" sx={heading}>
                                     Education
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Typography variant="h6" >
+                            <Grid item xs={12} sx={items}>
+                                <Typography variant="h5" >
                                     Western Governors University
+                                    <Typography variant="h6" fontStyle="italic">
+                                    - Bachelors of Science Software Development
+                                    </Typography>
                                 </Typography>
-                                <Typography variant="h6" >
-                                    Bachelors of Science Software Development
-                                </Typography>
+
                                 <Typography>
                                     April 2018 - December 2020
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Typography variant="h4" >
+                            <Grid item xs={12} sx={heading}>
+                                <Typography variant="h3">
                                     Projects
                                 </Typography>
-                                <Typography variant="h6" >
-                                    Crypto Human Networks
+                                <Typography variant="h5">
+                                    Crypto Human Networks <Typography fontStyle="italic">- Front End Developer</Typography>
                                 </Typography>
-                                <Typography variant="h6">
-                                    Front End Developer
-                                </Typography>
-                                <List dense={dense}>
+                                <List dense={dense} sx={listItems}>
                                     {cryptoHumanNetworks.map((value)=>{
                                         return (
                                           <ListItem>
@@ -61,13 +77,10 @@ const Resume = () => {
                                         )
                                     })}
                                 </List>
-                                <Typography variant="h6" >
-                                    Project Management KanBan
+                                <Typography variant="h5" >
+                                    Project Management KanBan <Typography fontStyle="italic">- Full Stack Developer</Typography>
                                 </Typography>
-                                <Typography variant="h6">
-                                    Full Stack Developer
-                                </Typography>
-                                <List dense={dense}>
+                                <List dense={dense} sx={listItems}>
                                     {kanBan.map((value)=>{
                                         return (
                                           <ListItem>
@@ -77,13 +90,10 @@ const Resume = () => {
                                         )
                                     })}
                                 </List>
-                                <Typography variant="h6" >
-                                    Sorting Algorithm Visualizer
+                                <Typography variant="h5" >
+                                    Sorting Algorithm Visualizer<Typography fontStyle="italic">- Front End Developer</Typography>
                                 </Typography>
-                                <Typography variant="h6">
-                                    Front End Developer
-                                </Typography>
-                                <List dense={dense}>
+                                <List dense={dense} sx={listItems}>
                                     {sortingVisualizer.map((value)=>{
                                         return (
                                           <ListItem>
@@ -95,22 +105,19 @@ const Resume = () => {
                                 </List>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h4" >
+                                <Typography variant="h3" >
                                     Work History
                                 </Typography>
-                                <Typography variant="h6" >
-                                    Omeo Technology
+                                <Typography variant="h5" >
+                                    Omeo Technology <Typography fontStyle="italic">- Eugene Oregon</Typography>
                                 </Typography>
-                                <Typography variant="h6">
-                                    Eugene Oregon
-                                </Typography>
-                                <Typography variant="h6">
+                                <Typography variant="h6" sx={{paddingLeft: 4}}>
                                     Videographer and editor
                                 </Typography>
-                                <Typography >
+                                <Typography sx={{paddingLeft: 4}}>
                                     April 2020 - Current
                                 </Typography>
-                                <Typography >
+                                <Typography sx={{paddingLeft: 4}}>
                                     Responsible for monthly online expo which replaced in person events due to COVID. 
                                     Filmed and edited content for social media. 
                                     https://www.facebook.com/OmeoTechnologyLtd/
@@ -120,7 +127,7 @@ const Resume = () => {
                     </Grid>
                     <Grid item xs={3}>
                         <Grid container>
-                            <Grid item>
+                            <Grid item sx={{paddingBottom: 8}}>
                                 <Typography>
                                     Corvallis, OR 97333
                                 </Typography>
@@ -131,7 +138,7 @@ const Resume = () => {
                                     LinkedIn
                                 </Typography>
                             </Grid>
-                            <Grid item>
+                            <Grid item sx={{paddingBottom: 8}}>
                                 <Typography variant="h6">
                                     Certifications
                                 </Typography>

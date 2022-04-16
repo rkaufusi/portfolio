@@ -18,8 +18,7 @@ function App() {
           direction="row"   
           justifyContent="center"
           alignItems="center"
-        >
-        
+        >      
         <Grid item xs={12} md={6}>
           <Grid 
             container 

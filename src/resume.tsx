@@ -17,9 +17,9 @@ const Resume = () => {
     return (
         <div>
             <Paper sx={{background: "#dddddd", paddingTop: 10, paddingBottom: 10}}>
-                <Grid container >
-                    <Grid item xs={9}>
-                        <Grid container justifyContent="center" alignItems="top">
+                <Grid container justifyContent='center'>
+                    <Grid item xs={9} >
+                        <Grid container sx={{p: 5}}>
                             <Grid item xs={12}>
                                 <Typography variant="h1" >
                                     Rhett Kaufusi
@@ -55,7 +55,7 @@ const Resume = () => {
                                     {cryptoHumanNetworks.map((value)=>{
                                         return (
                                           <ListItem>
-                                              <CircleIcon sx={{fontSize: 8}}/>
+                                            <CircleIcon sx={{fontSize: 8, p: 1}}/>
                                             <ListItemText primary={value.text}/>
                                           </ListItem>
                                         )
@@ -71,6 +71,7 @@ const Resume = () => {
                                     {kanBan.map((value)=>{
                                         return (
                                           <ListItem>
+                                            <CircleIcon sx={{fontSize: 8, p: 1}}/>
                                             <ListItemText primary={value.text}/>
                                           </ListItem>
                                         )
@@ -86,6 +87,7 @@ const Resume = () => {
                                     {sortingVisualizer.map((value)=>{
                                         return (
                                           <ListItem>
+                                            <CircleIcon sx={{fontSize: 8, p: 1}}/>
                                             <ListItemText primary={value.text}/>
                                           </ListItem>
                                         )
@@ -151,6 +153,7 @@ const Resume = () => {
                                     {skills.map((value)=>{
                                         return (
                                           <ListItem>
+                                            <CircleIcon sx={{fontSize: 8, p: 1}}/>
                                             <ListItemText primary={value.text}/>
                                           </ListItem>
                                         )

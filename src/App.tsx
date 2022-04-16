@@ -75,7 +75,7 @@ function App() {
         >
           {projects.map((value, index) => { 
             return(
-              <Grid item xs={12} md={6} lg={4} sx={{padding: 5, justifyContent: "center"}}>
+              <Grid item xs={12} md={6} lg={4} sx={{p: 5, justifyContent: "center"}}>
                 <Project title={value.title} projectImage={value.image} url={value.url}/>
               </Grid>
             )

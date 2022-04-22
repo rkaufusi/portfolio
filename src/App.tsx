@@ -8,7 +8,6 @@ import Project from './project'
 import Resume from './resume'
 
 function App() {
-  console.log(projects)
 
   return (
     <>
@@ -47,8 +46,7 @@ function App() {
               </Typography>
             </Grid>
           </Grid>
-        </Grid>
-        
+        </Grid>       
         <Grid item xs={12} md={6}>
         <Grid 
           container

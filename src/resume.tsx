@@ -9,15 +9,6 @@ import {useState} from 'react'
 import cryptoHumanNetworks, {kanBan, sortingVisualizer, certifications, skills} from './ProjectItems'
 import CircleIcon from '@mui/icons-material/Circle';
 
-/*
-          container
-          direction="row"   
-          justifyContent="center"
-          alignItems="center"
-
-*/
-
-
 const Resume = () => {
     const [dense, setDense] = useState(true);
     const items = {
@@ -31,7 +22,6 @@ const Resume = () => {
         paddingLeft: 1
     }
 
-    // sx={{paddingLeft: 6}}
     return (
         <div>
             <Paper sx={{background: "#f9f9f9", paddingTop: 10, paddingBottom: 10}}>
@@ -55,7 +45,6 @@ const Resume = () => {
                                     - Bachelors of Science Software Development
                                     </Typography>
                                 </Typography>
-
                                 <Typography>
                                     April 2018 - December 2020
                                 </Typography>

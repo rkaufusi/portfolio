@@ -26,12 +26,11 @@ const sortingVisualizer: projectText[] = [
 const certifications: projectText[] = [
     {id: 1, text: "Oracle Database SQL Certified Associate"},
     {id: 2, text: "CodeCademy Computer Science Path"},
-    {id: 3, text: "FreeCodeCamp Javascript Algorithms and Data Structures"},
-    {id: 4, text: "ITIL Foundation"},
-    {id: 5, text: "CompTIA Project+"},
-    {id: 6, text: "CIW User Interface Designer"},
-    {id: 7, text: "CIW Site Development Associate"},
-    {id: 8, text: "CIW Advanced HTML5 and CSS3 Specialist "}
+    {id: 3, text: "ITIL Foundation"},
+    {id: 4, text: "CompTIA Project+"},
+    {id: 5, text: "CIW User Interface Designer"},
+    {id: 6, text: "CIW Site Development Associate"},
+    {id: 7, text: "CIW Advanced HTML5 and CSS3 Specialist"}
 ]
 const skills: projectText[] = [
     {id: 1, text: "Javascript"},

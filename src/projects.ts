@@ -4,7 +4,7 @@ type Projects = {
     image: string,
     url: string
 }
-console.log(crypto)
+
 const projects: Projects[] = [
     {   id: 1,
         title: "Sort Algorithm Visualizer",

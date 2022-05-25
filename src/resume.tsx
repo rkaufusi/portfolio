@@ -29,32 +29,32 @@ const Resume = () => {
                     <Grid item xs={9} >
                         <Grid container alignItems="center" sx={{paddingLeft: 6}}>
                             <Grid item xs={12}>
-                                <Typography variant="h1">
+                                <Typography variant="h2">
                                     Rhett Kaufusi
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h3" sx={heading}>
+                                <Typography variant="h4" sx={heading}>
                                     Education
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12} sx={items}>
+                            <Grid item xs={10} sx={items}>
                                 <Typography variant="h5" >
                                     Western Governors University
                                     <Typography variant="h6" fontStyle="italic">
                                     - Bachelors of Science Software Development
                                     </Typography>
                                 </Typography>
-                                <Typography>
-                                    April 2018 - December 2020
+                                <Typography>                             
+                                        Coursework: Web Development, Technical Communication, Operating Systems, User Interface Design, Software Quality Assurance, Mobile App Development, Structure Query Language.           
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} sx={heading}>
-                                <Typography variant="h3">
+                                <Typography variant="h4">
                                     Projects
                                 </Typography>
                                 <Typography variant="h5">
-                                    Crypto Human Networks <Typography fontStyle="italic">- Front End Developer</Typography>
+                                    Crypto Search Engine <Typography fontStyle="italic">- Front End Developer</Typography>
                                 </Typography>
                                 <List dense={dense} sx={listItems}>
                                     {cryptoHumanNetworks.map((value)=>{
@@ -94,7 +94,7 @@ const Resume = () => {
                                 </List>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h3" >
+                                <Typography variant="h4" >
                                     Work History
                                 </Typography>
                                 <Typography variant="h5" >
@@ -107,27 +107,33 @@ const Resume = () => {
                                     April 2020 - Current
                                 </Typography>
                                 <Typography sx={{paddingLeft: 4}}>
-                                    Responsible for monthly online expo which replaced in person events due to COVID. 
-                                    Filmed and edited content for social media. 
-                                    https://www.facebook.com/OmeoTechnologyLtd/
+                                    Instituted monthly online expo which replaced in person events due to COVID. Filmed and edited content for advertisements and social media. 
                                 </Typography>
                             </Grid>
                         </Grid>                     
                     </Grid>
                     <Grid item xs={3}>
                         <Grid container>
-                            <Grid item sx={{paddingBottom: 8}}>
-                                <Typography>
-                                    Corvallis, OR 97333
-                                </Typography>
+                            <Grid item xs={12} sx={{paddingBottom: 8}}>
+                                <List>
+                                    <ListItem>
+                                        <Typography>
+                                            Corvallis, OR 97333
+                                        </Typography>
+                                    </ListItem>
+                                    <ListItem>
                                 <Typography>
                                     GitHub
                                 </Typography>
+                                </ListItem>
+                                <ListItem>
                                 <Typography>
                                     LinkedIn
                                 </Typography>
+                                </ListItem>
+                                </List>
                             </Grid>
-                            <Grid item sx={{paddingBottom: 8}}>
+                            <Grid item xs={12} sx={{paddingBottom: 8}}>
                                 <Typography variant="h6">
                                     Certifications
                                 </Typography>
@@ -141,7 +147,7 @@ const Resume = () => {
                                     })}
                                 </List>
                             </Grid>
-                            <Grid item>
+                            <Grid item xs={12}>
                                 <Typography variant="h6">
                                     Skills
                                 </Typography>

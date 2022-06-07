@@ -17,9 +17,9 @@ const projects: Projects[] = [
         url: "https://tourmaline-entremet-124d58.netlify.app/"
     },
     {   id: 3,
-        title: "TBD",
-        image: "https://avatars.githubusercontent.com/u/29996077?s=400&u=7ff0609f49dde0b01183b37e8d6384a9ef17f540&v=4",
-        url: "https://tourmaline-entremet-124d58.netlify.app/"
+        title: "Fullstack KanBan repository",
+        image: "https://blogthinkbig.com/wp-content/uploads/sites/4/2020/06/GitHub-Desktop-Logo.jpg?fit=1500%2C1000",
+        url: "https://github.com/rkaufusi/Project-Manager-KB"
     }
 ];
 

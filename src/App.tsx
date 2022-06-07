@@ -42,7 +42,12 @@ function App() {
             </Grid>
             <Grid item xs={12}>
               <Typography variant="h6">
-                <a href="https://github.com/rkaufusi/" target="_blank">GitHub</a>
+                <a href="https://github.com/rkaufusi/" target="_blank" rel="noreferrer">GitHub</a>
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6">
+                <a href="https://www.linkedin.com/in/rhett-kaufusi/" target="_blank" rel="noreferrer">LinkedIn</a>
               </Typography>
             </Grid>
           </Grid>

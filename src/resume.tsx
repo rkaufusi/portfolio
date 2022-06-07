@@ -34,26 +34,26 @@ const Resume = () => {
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h4" sx={heading}>
+                                <Typography variant="h4" sx={heading} color="#484848">
                                     Education
                                 </Typography>
                             </Grid>
                             <Grid item xs={10} sx={items}>
-                                <Typography variant="h5" >
+                                <Typography variant="h5" color="#003153">
                                     Western Governors University
                                     <Typography variant="h6" fontStyle="italic">
                                     - Bachelors of Science Software Development
                                     </Typography>
                                 </Typography>
                                 <Typography>                             
-                                        Coursework: Web Development, Technical Communication, Operating Systems, User Interface Design, Software Quality Assurance, Mobile App Development, Structure Query Language.           
+                                        Coursework: Web Development, Advanced Java Concepts, Technical Communication, Operating Systems, User Interface Design, Software Quality Assurance, Mobile App Development, Structure Query Language.           
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12} sx={heading}>
-                                <Typography variant="h4">
+                            <Grid item xs={10} sx={heading}>
+                                <Typography variant="h4" color="#484848">
                                     Projects
                                 </Typography>
-                                <Typography variant="h5">
+                                <Typography variant="h5" color="#003153">
                                     Crypto Search Engine <Typography fontStyle="italic">- Front End Developer</Typography>
                                 </Typography>
                                 <List dense={dense} sx={listItems}>
@@ -66,7 +66,7 @@ const Resume = () => {
                                         )
                                     })}
                                 </List>
-                                <Typography variant="h5" >
+                                <Typography variant="h5" color="#003153">
                                     Project Management KanBan <Typography fontStyle="italic">- Full Stack Developer</Typography>
                                 </Typography>
                                 <List dense={dense} sx={listItems}>
@@ -79,7 +79,7 @@ const Resume = () => {
                                         )
                                     })}
                                 </List>
-                                <Typography variant="h5" >
+                                <Typography variant="h5" color="#003153">
                                     Sorting Algorithm Visualizer<Typography fontStyle="italic">- Front End Developer</Typography>
                                 </Typography>
                                 <List dense={dense} sx={listItems}>
@@ -94,10 +94,10 @@ const Resume = () => {
                                 </List>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h4" >
+                                <Typography variant="h4" color="#484848">
                                     Work History
                                 </Typography>
-                                <Typography variant="h5" >
+                                <Typography variant="h5" color="#003153">
                                     Omeo Technology <Typography fontStyle="italic">- Eugene Oregon</Typography>
                                 </Typography>
                                 <Typography variant="h6" sx={{paddingLeft: 4}}>
@@ -123,18 +123,18 @@ const Resume = () => {
                                     </ListItem>
                                     <ListItem>
                                 <Typography>
-                                    GitHub
+                                    <a href="https://github.com/rkaufusi/" target="_blank" rel="noreferrer">GitHub</a>
                                 </Typography>
                                 </ListItem>
                                 <ListItem>
                                 <Typography>
-                                    LinkedIn
+                                    <a href="https://www.linkedin.com/in/rhett-kaufusi/" target="_blank" rel="noreferrer">LinkedIn</a>
                                 </Typography>
                                 </ListItem>
                                 </List>
                             </Grid>
                             <Grid item xs={12} sx={{paddingBottom: 8}}>
-                                <Typography variant="h6">
+                                <Typography variant="h6" color="#003153">
                                     Certifications
                                 </Typography>
                                 <List dense={dense} sx={{ display: 'list-item' }}>
@@ -148,7 +148,7 @@ const Resume = () => {
                                 </List>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant="h6">
+                                <Typography variant="h6" color="#003153">
                                     Skills
                                 </Typography>
                                 <List dense={dense}>
